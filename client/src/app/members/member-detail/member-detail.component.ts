@@ -52,7 +52,6 @@ export class MemberDetailComponent implements OnInit {
     if(!username){
       return;
     }
-    console.log("hi");
     this.memberService.getMember(username).subscribe({
       next: member => {
         this.member = member,
